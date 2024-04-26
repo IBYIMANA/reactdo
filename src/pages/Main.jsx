@@ -1,10 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
+
+
 const Main = () => {
   return (
     <>
-    <Navbar/>
+    <Navbar/> 
       <div className="flex w-full">
       <nav className="background w-[20%] text-blue-700 hover:text-red-600 text-2xl">
         <ul>
@@ -19,9 +21,8 @@ const Main = () => {
           </li>
         </ul>
       </nav>
-      <Outlet />
+    <Outlet />
       </div>
-      
     </>
   )
 };

@@ -5,6 +5,9 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 
+
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,7 +16,6 @@ const App = () => {
           <Route path=""element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="contact" element={<Contact />} />
-        
         </Route>
       </Routes>
     </BrowserRouter>
