@@ -23,14 +23,13 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-50 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-green-300 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
-        <div>
-          <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">Create your account</h2>
-        </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        
+        <form className="mt-8 space-y-6 bg-pink-500 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+        <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">Create your account</h2>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block ml-5 text-2xl font-bold text-black">
               Email address
             </label>
             <input
@@ -41,11 +40,11 @@ const SignUp = () => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              className="block p-2 mt-1 ml-5 border border-gray-300 rounded-md shadow-sm w-72 focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="password" className="block ml-5 text-2xl font-bold text-black">
               Password
             </label>
             <input
@@ -56,11 +55,11 @@ const SignUp = () => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              className="block p-2 mt-1 ml-5 border border-gray-300 rounded-md shadow-sm w-72 focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div>
-            <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="confirmPassword" className="block ml-5 text-2xl font-bold text-black">
               Confirm Password
             </label>
             <input
@@ -71,19 +70,19 @@ const SignUp = () => {
               required
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              className="block p-2 mt-1 ml-5 border border-gray-300 rounded-md shadow-sm w-72 focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div>
              <button
               type="submit"
-              className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="flex justify-center px-4 py-2 ml-5 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm w-72 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Sign up
             </button>
           </div>
-          <p>I have already a account </p>
-          <Link to={"/"} className='text-blue-400'>SignIn</Link>
+          <p className='ml-5 text-2xl font-bold'>I have already a account </p>
+          <Link to={"/"} className='ml-8 text-2xl font-bold text-blue-600'>SignIn</Link>
         </form>
       </div>
     </div>
