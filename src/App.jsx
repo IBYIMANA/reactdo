@@ -8,25 +8,21 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import ForgetPassword from './pages/ForgetPassword'
 import Reset from './pages/Reset'
-import Auth from './Api/Auth';
+
 
 
 const App = () => {
   return (
     <BrowserRouter>
   <Routes>
-    <Route path='/' element={<Auth/>}>
-      <Route path="/"element ={<SignIn />} />
-<Route path="/signup"element ={<SignUp />}/>
-<Route path="/reset"element ={<Reset/>}/>
-<Route path="/forgetpassword"element ={<ForgetPassword/>}/>
-    
-    </Route>
-    
-    <Route path="/"element ={<Main />} >
-<Route path ="/home"element ={<Home />}/>
-<Route path="/about"element ={<About />}/>
-<Route path="/contact"element ={<Contact/>}/>
+  <Route path="/"element ={<Main />} >
+      <Route path="/SignIn"element ={<SignIn />} />
+     <Route path="/signup"element ={<SignUp />}/>
+     <Route path="/reset"element ={<Reset/>}/>
+     <Route path="/forgetpassword" element ={<ForgetPassword/>}/>
+    <Route path ="/home"element ={<Home />}/>
+   <Route path="/about"element ={<About />}/>
+   <Route path="/contact"element ={<Contact/>}/>
 </Route>
 
   </Routes>

@@ -10,8 +10,8 @@ const Main = () => {
       <div className="flex w-full">
       <nav className="background w-[20%] text-blue-700 hover:text-red-600 text-2xl">
         <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <li>
+            <Link to="/SignIn">SignIn</Link>
           </li>
           <li>
             <Link to="/About">About</Link>
@@ -19,6 +19,7 @@ const Main = () => {
           <li>
             <Link to="/Contact">Contact</Link>
           </li>
+         
         </ul>
       </nav>
     <Outlet />
