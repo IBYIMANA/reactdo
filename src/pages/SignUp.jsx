@@ -23,10 +23,10 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-green-300 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-green-500 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
         
-        <form className="mt-8 space-y-6 bg-pink-500 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6 bg-yellow-200 border-2 border-solid" onSubmit={handleSubmit}>
         <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">Create your account</h2>
           <div>
             <label htmlFor="email" className="block ml-5 text-2xl font-bold text-black">
